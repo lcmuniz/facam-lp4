@@ -1,0 +1,31 @@
+Sandboxs de aplicações Reacts:
+
+Exemplos de useState:
+
+https://codesandbox.io/p/sandbox/contador-classe-yg3hks?file=%2Fsrc%2FApp.js
+
+https://codesandbox.io/p/sandbox/contador-funcional-k68m33?file=%2Fsrc%2FApp.js
+
+Exemplos de useEffect:
+
+https://codesandbox.io/p/sandbox/buscador-usuario-classe-cjrg3m?file=%2Fsrc%2FApp.js
+
+https://codesandbox.io/p/sandbox/buscador-usuario-funcional-k3kgw6
+
+Exemplos de useRef: 
+
+https://codesandbox.io/p/sandbox/foco-2s7c5h?file=%2Fsrc%2FApp.js
+
+https://codesandbox.io/p/sandbox/valor-anterior-z8vj2v?file=%2Fsrc%2FApp.js
+
+Exemplos de useReducer:
+
+https://codesandbox.io/p/sandbox/contador-reducer-wzydjy?file=%2Fsrc%2FApp.js
+
+Exemplos de useContext:
+
+https://codesandbox.io/p/sandbox/trocar-tema-mf93d4?file=%2Fsrc%2FApp.js
+
+Aplicação de cadastro de posts:
+
+https://codesandbox.io/p/sandbox/post-app-wjc733?file=%2Fsrc%2FApp.js
