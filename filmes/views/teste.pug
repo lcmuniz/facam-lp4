@@ -1,0 +1,24 @@
+extends layouts/main.pug
+
+block conteudo
+    div.p-8
+
+        h1(class=casado ? 'text-red-800' : 'text-blue-800')= nome
+
+        img.border-2.rounded-xl(src="https://picsum.photos/200")
+
+        ol
+        for cidade in cidades 
+            li= cidade
+
+        - let pais = 'Brasil'
+        
+        if casado 
+            h2 É casado 
+        else 
+            h2 Não é casado
+
+block anexos 
+
+    h1 Isto é um anexo 
+    h2 Luiz Carlos

@@ -1,0 +1,38 @@
+extends layouts/main.pug
+            
+block conteudo
+    form(method="get")
+        input.border-2.p-4.w-full.mt-4.mb-4.text-2xl(name="filtro" placeholder="Procurar...")
+
+    div 
+        div.flex 
+            img(src=filme.Poster)
+            div.ml-4.flex.flex-col.gap-4.text-2xl 
+                span.text-4xl.font-bold= filme.Title
+                span= 'Ano: ' + filme.Year
+                span= 'Gênro: ' + filme.Genre
+                span= 'Diretor: ' + filme.Director
+                span= 'Roteiro: ' + filme.Writer 
+                span= 'Atores: ' + filme.Actors
+                span= 'Sinopse: ' + filme.Plot
+                span= 'Linguagem: ' + filme.Language
+                span= 'Avaliação IMBD: ' + filme.imdbRating
+
+        for temporada in temporadas 
+            div.mt-4.bg-blue-800.p-2.text-white 
+                span= 'Temporada: ' + temporada.Season
+
+            table.border-2.w-full 
+                tr  
+                    th.text-left.p-2 Título 
+                    th.w-32 Data 
+                    th.w-32 Episódio 
+                    th.w-32 Avaliação IMDB
+                
+                for episodio in temporada.Episodes 
+                    tr 
+                        td.p-2= episodio.Title
+                        td.text-center= formatDateBr(episodio.Released) 
+                        td.text-center= episodio.Episode
+                        td.text-center= episodio.imdbRating
+        

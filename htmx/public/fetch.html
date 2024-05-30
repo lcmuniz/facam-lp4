@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.12"
+      integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Usuários</h1>
+    <button
+      hx-get="/usuarios"
+      hx-vals='{"limite": 12}'
+      hx-target="#usuarios"
+      hx-indicator="#loading"
+    >
+      Carregar Usuários
+    </button>
+    <span class="htmx-indicator" id="loading">Carregando...</span>
+    <div id="usuarios"></div>
+  </body>
+</html>
